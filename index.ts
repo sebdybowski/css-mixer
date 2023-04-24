@@ -1,8 +1,10 @@
-type ObjectClass = {
-	[key:string]: boolean
-};
+interface ObjectClass {
+	[key:string]: boolean;
+}
 
-type Classes =  string[] | [string[]] | ObjectClass[];
+type ArrayClass = [string[]];
+
+type Classes =  string[] | ObjectClass[] | ArrayClass;
 
 const mixer = (...classes: Classes): string => {
 	let classList: string[] = [];
@@ -18,7 +20,7 @@ const mixer = (...classes: Classes): string => {
 			}
 		}
 
-		if (cssClass instanceof Array) {
+		if (Array.isArray(cssClass)) {
 			classList = [...classList, ...cssClass];
 		}
 	})
