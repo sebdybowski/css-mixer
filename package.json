@@ -1,6 +1,6 @@
 {
   "name": "css-mixer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Minimal CSS class & id joiner written in TypeScript.",
   "keywords": [
     "react",
