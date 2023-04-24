@@ -1,0 +1,20 @@
+{
+  "name": "css-mixer",
+  "version": "0.1.0-beta.0",
+  "description": "Minimal CSS class & id joiner written in TypeScript.",
+  "keywords": [
+    "react",
+    "css",
+    "classes",
+    "className",
+    "typescript",
+    "clsx",
+    "classnemes"
+  ],
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seb Dybowski <dybowski.seb@gmail.com> (https://dybowski.pro)",
+  "license": "ISC"
+}
