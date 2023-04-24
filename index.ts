@@ -1,5 +1,4 @@
-interface ObjectClass
-{
+interface ObjectClass {
   [key: string]: boolean;
 }
 
@@ -7,32 +6,26 @@ type ArrayClass = [string[]];
 
 type Classes = string[] | ObjectClass[] | ArrayClass;
 
-const mixer = (...classes: Classes): string =>
-{
+const mixer = (...classes: Classes): string => {
   let classList: string[] = [];
 
-  classes.forEach(cssClass =>
-  {
-    if (typeof cssClass === 'string')
-    {
+  classes.forEach((cssClass) => {
+    if (typeof cssClass === "string") {
       classList.push(cssClass);
     }
 
-    if (cssClass instanceof Object)
-    {
-      for (const [key, value] of Object.entries(cssClass))
-      {
+    if (cssClass instanceof Object) {
+      for (const [key, value] of Object.entries(cssClass)) {
         if (value) classList.push(key);
       }
     }
 
-    if (Array.isArray(cssClass))
-    {
+    if (Array.isArray(cssClass)) {
       classList = [...classList, ...cssClass];
     }
-  })
+  });
 
-  return classList.join(' ');
+  return classList.join(" ");
 };
 
 export default mixer;
