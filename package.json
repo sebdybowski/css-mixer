@@ -11,7 +11,8 @@
     "clsx",
     "classnemes"
   ],
-  "main": "index.js",
+  "main": "index.min.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc && terser -c -m -o index.min.js -- index.js"
   },
