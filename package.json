@@ -16,5 +16,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Seb Dybowski <dybowski.seb@gmail.com> (https://dybowski.pro)",
-  "license": "ISC"
+  "license": "GPL-3.0"
 }
