@@ -4,7 +4,7 @@ interface ObjectClass {
 
 type ArrayClass = [string[]];
 
-type Classes = undefined[] | null[] | string[] | ObjectClass[] | ArrayClass;
+type Classes = undefined[] | null[] | boolean[] | string[] | ObjectClass[] | ArrayClass;
 
 const mixer = (...classes: Classes): string => {
 
