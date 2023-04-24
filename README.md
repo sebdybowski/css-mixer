@@ -1,5 +1,5 @@
 # css-mixer
-Minimal CSS class & id joiner written in TypeScript.
+Minimal `226 bytes` CSS class & id joiner written in TypeScript.
 
 Inspired by [clsx](https://github.com/lukeed/clsx) & [classnames](https://github.com/JedWatson/classnames).
 
