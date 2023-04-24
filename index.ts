@@ -4,12 +4,15 @@ interface ObjectClass {
 
 type ArrayClass = [string[]];
 
-type Classes = string[] | ObjectClass[] | ArrayClass;
+type Classes = undefined[] | null[] | string[] | ObjectClass[] | ArrayClass;
 
 const mixer = (...classes: Classes): string => {
+
   let classList: string[] = [];
 
   classes.forEach((cssClass) => {
+    if (null || undefined) return;
+
     if (typeof cssClass === "string") {
       classList.push(cssClass);
     }
