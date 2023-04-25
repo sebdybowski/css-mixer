@@ -2,12 +2,9 @@ interface ObjectClass {
   [key: string]: boolean;
 }
 
-type ArrayClass = [string[]];
-
-type Classes = undefined[] | null[] | boolean[] | string[] | ObjectClass[] | ArrayClass;
+type Classes = (boolean | string | string[] | ObjectClass)[];
 
 const mixer = (...classes: Classes): string => {
-
   let classList: string[] = [];
 
   classes.forEach((cssClass) => {

@@ -9,7 +9,8 @@ npm i css-mixer
 ```
 
 ## Usage
-In JSX files:
+### JSX 
+Code:
 ```jsx
 import mixer from 'css-mixer';
 
@@ -21,8 +22,19 @@ return <div
     id={isCapibara && 'capibara', isPokemon && 'pokemon'}
     className={mixer('foo', {bar: true, pub: false}, ['fizz', 'buzz'])}
 />;
+//...
 ```
 Outcome (html): 
 ```html
 <div id="capibara" class="foo bar fizz buzz"></div>
+```
+
+### JS
+```js
+const mixer = require('css-mixer');
+
+console.log(
+    mixer('a', true && 'b', false && 'c', ['d', 'e'], {f: true, g: false})
+);
+// output: 'a b d e f'
 ```

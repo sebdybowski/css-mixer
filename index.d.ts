@@ -1,7 +1,6 @@
 interface ObjectClass {
     [key: string]: boolean;
 }
-type ArrayClass = [string[]];
-type Classes = undefined[] | null[] | string[] | ObjectClass[] | ArrayClass;
+type Classes = (boolean | string | string[] | ObjectClass)[];
 declare const mixer: (...classes: Classes) => string;
 export default mixer;
