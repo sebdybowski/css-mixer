@@ -20,7 +20,7 @@
     "build": "tsc && terser -c -m -o index.min.js -- index.js"
   },
   "author": "Seb Dybowski <dybowski.seb@gmail.com> (https://dybowski.pro)",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "devDependencies": {
     "terser": "^5.17.1",
     "typescript": "^5.0.4"
