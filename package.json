@@ -11,6 +11,9 @@
     "clsx",
     "classnemes"
   ],
+  "repository": {
+    "url": "https://github.com/sebdybowski/css-mixer"
+  },
   "main": "index.min.js",
   "types": "index.d.ts",
   "scripts": {
